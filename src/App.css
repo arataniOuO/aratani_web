@@ -1,38 +1,96 @@
+/* Estilo del contenedor principal */
 .App {
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #a4508b 0%,#5f0a87 100%);
+  color: white;
+  padding: 20px;
+  overflow: hidden; /* Evita el desbordamiento vertical */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Estilo del encabezado */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin-bottom: 10px;
+  font-size: 1.5em; /* Reduce el tamaño de la fuente del título */
+}
+
+/* Estilo del carrusel */
+.carousel .slide {
+  background: none;
+}
+
+.carousel .control-arrow, 
+.carousel.carousel-slider .control-arrow {
+  display: none;
+}
+
+.carousel .thumb {
+  border: 2px solid white;
+}
+
+.carousel .selected {
+  border: 2px solid #5f0a87;
+}
+
+/* Estilo del contenedor de proyectos en el carrusel */
+.carousel .carousel-slider .control-dots {
+  position: static;
+}
+
+.carousel .carousel-slider .slider-wrapper {
+  overflow-y: auto;
+  max-height: 60vh; /* Limita la altura y habilita el scroll */
+}
+
+/* Estilo individual del proyecto */
+.carousel .slide {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 10px 10px 50px 10px; /* Añade más padding en la parte inferior */
+  box-sizing: border-box;
+}
+
+/* Estilo de la imagen del proyecto */
+.carousel .slide img {
+  width: 70%; /* Reduce el tamaño de la imagen */
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+  max-height: 30vh; /* Limita la altura de la imagen */
+}
+
+/* Estilo del título del proyecto */
+.carousel .slide h3 {
   color: white;
+  margin: 10px 0;
+  font-size: 1.2em; /* Reduce el tamaño de la fuente del título del proyecto */
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilo de la descripción del proyecto */
+.carousel .slide p {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 0.8em; /* Reduce el tamaño de la fuente de la descripción */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilo del enlace del proyecto */
+.carousel .slide a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 0.8em; /* Reduce el tamaño de la fuente del enlace */
+}
+
+.carousel .slide a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }

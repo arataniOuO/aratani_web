@@ -1,0 +1,19 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "VR Museum",
+        "image": "/images/logo.png",
+        "description": "VR Museum es el proyecto que presente como trabajo de fin de grado. Un museo en realidad virtual.",
+        "link": "https://drive.google.com/drive/folders/15gk3IrGJ7gBi3kU1J227IhvUh9J9G17e?usp=sharing"
+      },
+      {
+        "id": 2,
+        "title": "Math App",
+        "image": "/images/logo.png",
+        "description": "Math App es mi primer proyecto personal: un sencillo juego de operaciones matematicas, publicado en la Play Store",
+        "link": "https://github.com/arataniOuO/MathApp"
+      }
+    ]
+  }
+  
